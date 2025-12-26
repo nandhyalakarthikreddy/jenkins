@@ -4,19 +4,10 @@ pipeline {
             label 'AGENT-1'
         }
     }
-    environment {
-        COURSE = "jenkins"
-    }
     stages {
         stage('Build') { 
             steps {
-                script{
-                    sh """
-                        echo "Building" 
-                        echo $COURSE
-
-                    """
-                }
+                echo "Building" 
             }
         }
         stage('Test') { 
