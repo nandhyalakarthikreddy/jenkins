@@ -19,7 +19,7 @@ pipeline {
             steps {
                 script{
                     sh """
-                        echo "Building" 
+                        echo "Buildings" 
                         echo $COURSE
 
                         echo "Hello ${params.PERSON}"
